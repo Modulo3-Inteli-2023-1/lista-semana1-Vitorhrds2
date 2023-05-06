@@ -5,26 +5,26 @@
 
 
 # Crie a função que será avaliada no exercício aqui
-valor1 = int(input())
-valor2 = int(input())
-
-def multiplas_operacoes(numero1, numero2):
-
-    print(numero1 + numero2)
-    print(numero1 - numero2)
-    print(numero1 * numero2)
-    if(valor1 == 0, valor2 == 0):
-        print(0)
+def multiplas_operacoes(a, b):
+    if b == 0:
+        return 0
     else:
-        print(numero1 / numero2)
-    
-print(multiplas_operacoes(valor1, valor2))
+        soma = a + b
+        subtracao = a - b
+        multiplicacao = a * b
+        divisao = a / b
+        return soma, subtracao, multiplicacao, divisao
 
 
 
 
 
 # Teste a sua função aqui (caso ache necessário
+resultado = multiplas_operacoes(20, 10)
+print(resultado) # (30, 10, 200, 2.0)
+
+resultado = multiplas_operacoes(9, 0)
+print(resultado) # 0
 
 
 

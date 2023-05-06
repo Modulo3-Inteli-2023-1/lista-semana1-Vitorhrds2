@@ -17,13 +17,13 @@ def cumulativo(lista):
 
     return lista2
 
-print(cumulativo([2, 3, 4, 5]))
 
 
 
 
 
 # Teste a sua função aqui (caso ache necessário)
+print(cumulativo([2, 3, 4, 5])) # [2, 5, 9, 14]
 
 
 

@@ -5,27 +5,23 @@
 
 
 # Crie a função que será avaliada no exercício aqui
-
-
-def soma_aninhada(t):
-    """
-    Calcula o total de todos os numeros na lista de listas.
-   
-    t: lista da lista de numeros
-    return: valor total somado
-    """
-    total = 0
-    for i in t:
-        total += sum(i)
-    return total
-
-t = [[11, 22], [33], [44, 55, 66]]
-print(soma_aninhada(t))
+def soma_dos_aninhados(lista):
+    soma = 0
+    for sublista in lista:
+        for num in sublista:
+            soma += num
+    return soma
 
 
 
 # Teste a sua função aqui (caso ache necessário)
+lista = [[11, 22], [33], [44, 55, 66]]
+resultado = soma_dos_aninhados(lista)
+print(resultado) # 231
 
+outra_lista = [[1, 2, 3, 4], [3, 3], [4, 6]]
+resultado = soma_dos_aninhados(outra_lista)
+print(resultado) # 26
 
 
 
